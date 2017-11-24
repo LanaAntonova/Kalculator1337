@@ -44,15 +44,15 @@ void main() {
 
 	switch(menu) {
 		case 1:
-			cout << "Summa.\nPlease input two numbers: " << endl;
+			cout << "Summation.\nPlease input two numbers: " << endl;
 			cin >> a; cin >> b;
 			c = Sum(a, b);
 			cout << c << endl;
 			break;
 		case 2:
-			cout << "Sub.\nPlease input two numbers: " << endl;
+			cout << "Subtraction.\nPlease input two numbers: " << endl;
 			cin >> a; cin >> b;
-			c = (a, b);
+			c = Sub(a, b);
 			cout << c << endl;
 			break;
 		case 3:
