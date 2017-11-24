@@ -17,7 +17,16 @@ Author:
 
 using namespace std;
 
+int Mul(int a, int b) {
+	return a*b;
+}
+
+int Div(int a, int b) {
+	return a/b;
+}
+
 void main() {
+	int a = 0, b = 0, c = 0;
 	int menu = 0;
 
 	cout << "Calculator 1337" << endl;
@@ -31,8 +40,18 @@ void main() {
 		case 2:
 			break;
 		case 3:
+			cout << "Multiply.\nPlease input two numbers: " << endl;
+			cin >> a; cin >> b;
+			c = Mul(a, b);
+			cout << c << endl;
 			break;
 		case 4:
+			cout << "Diviation.\nPlease input two numbers: " << endl;
+			cin >> a; cin >> b;
+			c = Div(a, b);
+			cout << c << endl;
 			break;
 	}
+
+	system("pause");
 }
