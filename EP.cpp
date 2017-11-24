@@ -17,6 +17,14 @@ Author:
 
 using namespace std;
 
+int Sum(int a, int b) {
+	return a+b;
+}
+
+int Sub(int a, int b) {
+	return a-b;
+}
+
 int Mul(int a, int b) {
 	return a*b;
 }
@@ -36,8 +44,16 @@ void main() {
 
 	switch(menu) {
 		case 1:
+			cout << "Summa.\nPlease input two numbers: " << endl;
+			cin >> a; cin >> b;
+			c = Sum(a, b);
+			cout << c << endl;
 			break;
 		case 2:
+			cout << "Sub.\nPlease input two numbers: " << endl;
+			cin >> a; cin >> b;
+			c = (a, b);
+			cout << c << endl;
 			break;
 		case 3:
 			cout << "Multiply.\nPlease input two numbers: " << endl;
