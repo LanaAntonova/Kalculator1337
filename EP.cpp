@@ -15,6 +15,12 @@ Author:
 
 #include <iostream>
 
+// For except handle
+#define _X86_
+#define NOWINDOWSTATION
+#include <WinDef.h>
+#include <WinUser.h>
+
 using namespace std;
 
 int Sum(int a, int b) {
@@ -42,32 +48,36 @@ void main() {
 	cout << "Choose action: \n\t1) Add\n\t2) Sub\n\t3) Mul\n\t4) Div" << endl;
 	cin >> menu;
 
-	switch(menu) {
-		case 1:
-			cout << "Summation.\nPlease input two numbers: " << endl;
-			cin >> a; cin >> b;
-			c = Sum(a, b);
-			cout << c << endl;
-			break;
-		case 2:
-			cout << "Subtraction.\nPlease input two numbers: " << endl;
-			cin >> a; cin >> b;
-			c = Sub(a, b);
-			cout << c << endl;
-			break;
-		case 3:
-			cout << "Multiply.\nPlease input two numbers: " << endl;
-			cin >> a; cin >> b;
-			c = Mul(a, b);
-			cout << c << endl;
-			break;
-		case 4:
-			cout << "Diviation.\nPlease input two numbers: " << endl;
-			cin >> a; cin >> b;
-			c = Div(a, b);
-			cout << c << endl;
-			break;
-	}
+	__try {
+		switch(menu) {
+			case 1:
+				cout << "Summation.\nPlease input two numbers: " << endl;
+				cin >> a; cin >> b;
+				c = Sum(a, b);
+				cout << c << endl;
+				break;
+			case 2:
+				cout << "Subtraction.\nPlease input two numbers: " << endl;
+				cin >> a; cin >> b;
+				c = Sub(a, b);
+				cout << c << endl;
+				break;
+			case 3:
+				cout << "Multiply.\nPlease input two numbers: " << endl;
+				cin >> a; cin >> b;
+				c = Mul(a, b);
+				cout << c << endl;
+				break;
+			case 4:
+				cout << "Diviation.\nPlease input two numbers: " << endl;
+				cin >> a; cin >> b;
+				c = Div(a, b);
+				cout << c << endl;
+				break;
+		}
+	} __except(1) {
+		MessageBox(NULL, "Exception detect!", "Err", MB_ICONERROR);
+	};
 
 	system("pause");
 }
