@@ -14,12 +14,9 @@ Author:
 --*/
 
 #include <iostream>
+#include <windows.h>
 
-// For except handle
-#define _X86_
-#define NOWINDOWSTATION
-#include <WinDef.h>
-#include <WinUser.h>
+#include "MulDiv.h"
 
 using namespace std;
 
@@ -29,14 +26,6 @@ int Sum(int a, int b) {
 
 int Sub(int a, int b) {
 	return a-b;
-}
-
-int Mul(int a, int b) {
-	return a*b;
-}
-
-int Div(int a, int b) {
-	return a/b;
 }
 
 void main() {
