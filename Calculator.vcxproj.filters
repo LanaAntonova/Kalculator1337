@@ -17,6 +17,9 @@
     <ClCompile Include="MulDiv.cpp">
       <Filter>Src</Filter>
     </ClCompile>
+    <ClCompile Include="SumSub.cc">
+      <Filter>Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MulDiv.h">

@@ -62,6 +62,7 @@
   <ItemGroup>
     <ClCompile Include="MulDiv.cpp" />
     <ClCompile Include="EP.cpp" />
+    <ClCompile Include="SumSub.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MulDiv.h" />

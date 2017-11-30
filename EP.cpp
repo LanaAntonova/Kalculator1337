@@ -17,16 +17,9 @@ Author:
 #include <windows.h>
 
 #include "MulDiv.h"
+#include "SumSub.h"
 
 using namespace std;
-
-int Sum(int a, int b) {
-	return a+b;
-}
-
-int Sub(int a, int b) {
-	return a-b;
-}
 
 void main() {
 	int a = 0, b = 0, c = 0;
