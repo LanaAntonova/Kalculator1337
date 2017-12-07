@@ -3,4 +3,4 @@ ipch/
 *.opensdf
 *.sdf
 *.suo
-*.vcxproj.*
+*.vcxproj.u*
